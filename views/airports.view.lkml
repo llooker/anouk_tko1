@@ -1,5 +1,6 @@
 view: airports {
   sql_table_name: public.airports ;;
+  drill_fields: [id]
 
   dimension: id {
     primary_key: yes
