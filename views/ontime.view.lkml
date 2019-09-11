@@ -2,9 +2,12 @@ view: ontime {
   sql_table_name: public.ontime ;;
 
   dimension: arr_delay {
+    description: "Arrival delay in minutes"
     type: number
     sql: ${TABLE}.arr_delay ;;
   }
+
+  dimension: arr_delay_class {}
 
   dimension_group: arr {
     type: time
